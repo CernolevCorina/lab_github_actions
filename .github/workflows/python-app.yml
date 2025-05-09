@@ -17,5 +17,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install pytest
+        run: pip install pytest
+
       - name: Run script
-        run: python script.py
+        run: python test_script.py
+
+      - name: Run tests
+        run: pytest
